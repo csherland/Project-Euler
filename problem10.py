@@ -8,24 +8,24 @@ import math
 
 def isPrime(number):
 
-	if (number <= 3):
-		return True
+        if (number <= 3):
+                return True
 
-	for x in range(2,int(math.ceil(math.sqrt(number)))+1):
-		if (number % x) == 0:
-			return False
-	
-	return True
+        for x in range(2,int(math.ceil(math.sqrt(number)))+1):
+                if (number % x) == 0:
+                        return False
+        
+        return True
 
 def problem_10():
 
-	cumSum = 0
+        cumSum = 0
 
-	for i in range(2, 2000001):
-		if isPrime(i):
-			cumSum += i
-	
-	return cumSum
+        for i in range(2, 2000001):
+                if isPrime(i):
+                        cumSum += i
+        
+        return cumSum
 
 if __name__ == '__main__':
-	print problem_10()
+        print problem_10()

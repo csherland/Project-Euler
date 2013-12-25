@@ -18,13 +18,5 @@ def problem_4():
 
     return 255  # Return a sentinel value to indicate failure.
 
-if __name__ == '__main__':	
-	print problem_4()
-
-
-	
-		
-			
-
-		
-		
+if __name__ == '__main__':      
+    print problem_4()
